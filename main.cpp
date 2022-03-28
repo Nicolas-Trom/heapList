@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 #include <limits>
-#include "./datastructures/heap.cpp"
+#include "./datastructures/minheap.cpp"
 using namespace std;
 
 int main()

@@ -6,32 +6,28 @@
 using namespace std;
 
 
-class Heap
+class MinHeap
 {
 private:
+    // TODO
 public:
-    Heap(int size)
+    MinHeap(int size)
     {
         // TODO
     }
-    ~Heap()
+    void insertar(int valor, int listaDeOrigen)
     {
         // TODO
     }
-    void add(string clave, int valor)
-    {
+    int valorTope() {
         // TODO
+        return 0;
     }
-    void remove(string clave)
-    {
+    int listaDeOrigenTope() {
         // TODO
+        return 0;
     }
-    int get(string clave)
-    {
-        // TODO
-    }
-    bool exist(string clave)
-    {
+    void eliminarTope() {
         // TODO
     }
 };
