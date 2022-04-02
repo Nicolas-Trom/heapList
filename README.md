@@ -38,7 +38,7 @@ La salida contendrá P líneas, cada una con los elementos de la lista resultant
 | 3           |
 | 1           |
 | 2           |
-| 2           |
+| 3           |
 | 1           |
 | 5           |
 
