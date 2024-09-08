@@ -136,10 +136,12 @@ class Lista {
 
         void Vaciar(){
             VaciarRec(ppio);
+            ppio = nullptr;
         }
+        
 
-        IteradorLista<T>* obtenerIterador(){
-            return new IteradorLista<T>(ppio);
+       IteradorLista<T>* obtenerIterador(){
+           return new IteradorLista<T>(ppio);
         }
 };
 
@@ -147,27 +149,27 @@ void hacerCOut(int dato){
     cout << "Mi dato es: " << dato << endl;
 }
 
-int main(){
-    Lista<int>* l = new Lista<int>();
-    l->InsertarPpio(5);
-    l->InsertarPpio(4);
-    l->InsertarPpio(3);
-    l->InsertarPpio(2);
-    l->InsertarPpio(1);
+// int main(){
+//    Lista<int>* l = new Lista<int>();
+//    l->InsertarPpio(5);
+//    l->InsertarPpio(4);
+//    l->InsertarPpio(3);
+//    l->InsertarPpio(2);
+//    l->InsertarPpio(1);
 
-    // Lista<string>* lStr = new Lista<string>();
-    // lStr->InsertarPpio("Rigoberta Menchú 1");
-    // lStr->InsertarPpio("Rigoberta Menchú 2");
-    // lStr->InsertarPpio("Rigoberta Menchú 3");
-    // lStr->InsertarPpio("Rigoberta Menchú 4");
-    // lStr->InsertarPpio("Rigoberta Menchú 5");
+//     Lista<string>* lStr = new Lista<string>();
+//     lStr->InsertarPpio("Rigoberta Menchú 1");
+//     lStr->InsertarPpio("Rigoberta Menchú 2");
+//     lStr->InsertarPpio("Rigoberta Menchú 3");
+//     lStr->InsertarPpio("Rigoberta Menchú 4");
+//     lStr->InsertarPpio("Rigoberta Menchú 5");
 
-    for(IteradorLista<int>* it = l->obtenerIterador(); it->HayElemento(); it->Avanzar()){
-        cout << "Holi " << it->Elemento() << endl;
-    }
-    //lStr->MostrarR();
+//     for(IteradorLista<int>* it = l->obtenerIterador(); it->HayElemento(); it->Avanzar()){
+//        cout << "Holi " << it->Elemento() << endl;
+//     }
+//     lStr->MostrarR();
 
-    delete l;
+//     delete l;
 
-    return 0;
-}   
+//    return 0;
+// }   

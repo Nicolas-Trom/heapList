@@ -3,8 +3,6 @@
 #include <cassert>
 #include <string>
 #include <iostream>
-#include "./Lista/lista.cpp"
-#include "./Heap/heap.cpp"
 using namespace std;
 
 

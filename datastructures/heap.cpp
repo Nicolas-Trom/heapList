@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Lista/lista.cpp"
 using namespace std;
 
 template<class T>
@@ -117,7 +116,7 @@ class Heap {
         }
 };
 
-int main() {
+//int main() {
 
     // Heap<string>* h= new Heap<string>(10);
     // h->Insertar(10, "J");
@@ -141,7 +140,7 @@ int main() {
 
     // delete h;
 
-    Heap<Lista<int>*>*heap = new Heap<Lista<int>*>(5);
+    // Heap<Lista<int>*>*heap = new Heap<Lista<int>*>(5);
 
-    return 0;
-}
+    //return 0;
+//}

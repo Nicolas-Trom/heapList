@@ -8,6 +8,16 @@ class IteradorLista {
 
     public:
         IteradorLista(nodoLista<T>* ppio): ppio(ppio), actual(ppio) {}
+
+        ~IteradorLista() {
+            // Destructor to clean up memory if necessary
+            nodoLista<T>* temp;
+            while (ppio != nullptr) {
+                temp = ppio;
+                ppio = ppio->sig;
+                delete temp;
+            }
+        }
         
         // Pre: HayElemento()
         T Elemento() {
